@@ -1,0 +1,305 @@
+/* styles.css */
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-image: url(./Img/Portafolio.jpg);
+    background-size: 100%;       /* Escala la imagen para cubrir todo el contenedor */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-color: #333;
+    aspect-ratio: 16 / 9; /* O ajusta según tu imagen */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 15rem;
+    margin-bottom: 10px;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #331741b7;
+    filter: blur(10px);
+    z-index: 0;
+}
+
+.hero-content {
+    z-index: 1;
+    color: aliceblue;
+    font-size: 40px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra el título */
+    gap: 2rem;
+    position: relative;
+}
+
+.btn {
+    position: fixed;
+    /* bottom: 1rem; */
+    right: 1rem;
+    display: flex;           
+    flex-direction: column;
+    align-items: flex-end;  
+    gap: 1rem;
+}
+
+h1{ 
+    font-family: "Delius", cursive; 
+}
+
+a { 
+    font-family: "Delius Swash Caps", cursive; 
+}
+
+.cta-button {
+    background-color: #636310cc;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    background-image: url(./Img/BannerFinal.jpg);
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+/* Projects Section */
+#projects{
+    padding: 50px 20px;
+    background-color: #615959;
+    color: #ddd;
+}
+
+#projectsOwn{
+    padding: 50px 20px;
+    background-color: #88658D;
+    color: #ddd;
+    /* background-image: url(./Img/Back_1.jpg); */
+    background-size: 100%;
+}
+
+#projects h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 70%;
+}
+.izquierda{
+    flex: 1 1 45%;
+    /* display: flex; */
+    align-items:center ;
+    justify-content: center;
+}
+
+.derecha{
+    flex: 1 1 45%;
+    margin-bottom: 2rem;
+}
+
+h3{
+    font-size: 58px;
+    margin-bottom: 2rem;
+    right: 1rem;
+    display: flex;           
+    flex-direction: column;
+    align-items: flex-end;  
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.inferior{
+    display: flex;
+    flex-wrap: wrap;
+}
+.CajaUno , .CajaDos , .CajaTres{
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.profilePicture{
+    width: 15%;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* img{
+    height: 50px;
+} */
+
+
+/* Estilos para menú hamburguesa en móvil */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+/* styles.css */
+
+/* Animación de desvanecimiento */
+/* .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+
+/* Particle Styles */
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .particle {
+    position: absolute;
+    background: #eca6f1;
+    border-radius: 100%;
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(239, 235, 240, 0.934), 0 0 20px rgba(255, 255, 255, 0.726);
+  }
+
+
+  /* Onda */
+
+  .wave-section {
+    position: relative;
+    height: 200px; /* ajusta como quieras */
+    overflow: hidden;
+    margin-top: -10rem;
+    margin-bottom: -4rem;
+  }
+  
+  .wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -10px;
+    
+  }
+  

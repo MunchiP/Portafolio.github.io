@@ -59,27 +59,26 @@ header nav {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centra el título */
+    align-items: center;
     gap: 2rem;
     position: relative;
 }
 
 .btn {
     position: fixed;
-    /* bottom: 1rem; */
     right: 1rem;
-    display: flex;           
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;  
+    align-items: flex-end;
     gap: 1rem;
 }
 
-h1{ 
-    font-family: "Delius", cursive; 
+h1{
+    font-family: "Delius", cursive;
 }
 
-a { 
-    font-family: "Delius Swash Caps", cursive; 
+a {
+    font-family: "Delius Swash Caps", cursive;
 }
 
 .cta-button {
@@ -103,15 +102,6 @@ a {
     background-color: #fff;
 }
 
-#about h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 18px;
-}
-
 /* Projects Section */
 #projects{
     padding: 50px 20px;
@@ -119,65 +109,98 @@ a {
     color: #ddd;
 }
 
-#projectsOwn{
-    padding: 50px 20px;
-    background-color: #88658D;
-    color: #ddd;
-    /* background-image: url(./Img/Back_1.jpg); */
-    background-size: 100%;
-}
-
-#projects h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.project-item {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 3rem;
+/* Propiedades de proyectos colaborativos */
+.project-list{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-}
-
-img{
-    width: 70%;
-}
-.izquierda{
-    flex: 1 1 45%;
-    /* display: flex; */
-    align-items:center ;
+    gap: 1rem;
     justify-content: center;
 }
 
-.derecha{
-    flex: 1 1 45%;
-    margin-bottom: 2rem;
+h2{
+    font-family: "Delius", cursive;
 }
 
-h3{
-    font-size: 58px;
-    margin-bottom: 2rem;
-    right: 1rem;
-    display: flex;           
+.project-item {
+    flex: 0 1 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.255);
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+}
+
+.tituloSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.textoIcon{
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.imgGames{
+    width: 50%;
+}
+
+.pharText{
+      font-size: 45px;
+}
+
+#projectsOwn{
+    padding: 50px 20px;
+    background-color: #88658d;
+    border-color: #b702cf70;
+    color: #ddd;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.255);
+}
+
+
+#projectsJams{
+    padding: 50px 20px;
+    background-color: #65838d;
+    color: #ddd;
+    /* background-size: 100%; */
+}
+
+#projects h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+h3{
+    font-size: 48px;
+    margin-bottom: 1rem;
+    /* right: 1rem; */
+    font-family: "DynaPuff", system-ui;
 }
 
 p{
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.5;
 }
 
 .inferior{
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 2rem;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
-.CajaUno , .CajaDos , .CajaTres{
-    margin-right: 2rem;
-    margin-left: 2rem;
+
+.CajaUno{
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .profilePicture{
@@ -219,9 +242,50 @@ footer {
     color: white;
 }
 
-/* img{
-    height: 50px;
-} */
+.izquierda {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profilePicture {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.derecha {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.derecha h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.derecha p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: center;
+    align-self: center;
+    max-width: 600px;
+    margin-bottom: 0.8rem;
+}
+
+.endTxt{
+    color: #333;
+}
+
+.endTxt.end{
+    font-family: "Delius", cursive;
+    font-size: 60px;
+}
+
 
 
 /* Estilos para menú hamburguesa en móvil */
@@ -249,22 +313,6 @@ footer {
         display: flex;
     }
 }
-
-
-/* styles.css */
-
-/* Animación de desvanecimiento */
-/* .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-} */
-
 
 /* Particle Styles */
 #particles {
@@ -294,12 +342,11 @@ footer {
     margin-top: -10rem;
     margin-bottom: -4rem;
   }
-  
+
   .wave {
     position: absolute;
     width: 100%;
     height: 100%;
     bottom: -10px;
-    
+
   }
-  

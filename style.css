@@ -77,6 +77,14 @@ h1{
     font-family: "Delius", cursive;
 }
 
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 a {
     font-family: "Delius Swash Caps", cursive;
 }
@@ -105,7 +113,7 @@ a {
 /* Projects Section */
 #projects{
     padding: 50px 20px;
-    background-color: #615959;
+    background-color: #000000;
     color: #ddd;
 }
 
@@ -122,13 +130,13 @@ h2{
 }
 
 .project-item {
-    flex: 0 1 40%;
+    flex: 0 1 30%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.255);
     margin-bottom: 3rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
 }
 
 .tituloSection {
@@ -153,11 +161,19 @@ h2{
 }
 
 .pharText{
-      font-size: 45px;
+      font-size: 35px;
 }
 
+#projectsDev{
+    padding: 30px 20px;
+    background-color: #658d7a;
+    color: #ddd;
+    /* background-size: 100%; */
+}
+
+
 #projectsOwn{
-    padding: 50px 20px;
+    padding: 30px 20px;
     background-color: #88658d;
     border-color: #b702cf70;
     color: #ddd;
@@ -166,7 +182,7 @@ h2{
 
 
 #projectsJams{
-    padding: 50px 20px;
+    padding: 30px 20px;
     background-color: #65838d;
     color: #ddd;
     /* background-size: 100%; */
@@ -238,7 +254,7 @@ p{
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #636310;
     color: white;
 }
 
